@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Todoist - Manage Your Tasks</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="/style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="wrap">
+				<section class="heading">
+					<p class="title">Todoist</p>
+					<p class="subtitle">
+						Manage and Search Your Pending Tasks in Clicks!
+					</p>
+				</section>
+
+				<section class="task-manager">
+					<div class="search-box">
+						<form class="search">
+							<input
+								type="text"
+								name="task"
+								placeholder="Search Task"
+								autocomplete="off"
+							/>
+							<i class="bi bi-x-circle reset"></i>
+						</form>
+					</div>
+					<div class="task-box">
+						<ul class="tasks">
+							<li>
+								<span>Video Recording</span>
+								<i class="bi bi-trash-fill delete"></i>
+							</li>
+							<li>
+								<span>Editing</span>
+								<i class="bi bi-trash-fill delete"></i>
+							</li>
+							<li>
+								<span>Audio Recording</span>
+								<i class="bi bi-trash-fill delete"></i>
+							</li>
+						</ul>
+						<form class="add">
+							<input
+								type="text"
+								name="task"
+								placeholder="Add Task"
+								autocomplete="off"
+							/>
+							<input type="submit" value="Add" />
+						</form>
+					</div>
+					<div class="message">
+						<span></span>
+						<button class="clear">Clear All</button>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<script src="/script.js"></script>
+	</body>
+</html>
